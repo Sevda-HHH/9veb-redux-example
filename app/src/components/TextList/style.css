@@ -1,0 +1,11 @@
+.textList{
+    width: 50vw;
+    display: flex ;
+    justify-content: center; 
+    height: 100vh;
+    margin-top: 36px;
+}
+
+.textList ul{ 
+    list-style: none;
+}

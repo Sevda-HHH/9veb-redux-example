@@ -1,0 +1,24 @@
+header {
+    padding: 8px 36px;
+    border-bottom: 0.5px solid #252525;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header ul li {
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+header .count {
+    color: chocolate;
+    font-weight: 500;
+}

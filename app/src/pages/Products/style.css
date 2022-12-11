@@ -1,0 +1,35 @@
+section.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 24px;
+}
+
+section.cards .card {
+    width: 25%;
+    height: 400px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 0.1px solid #252525;
+}
+
+section.cards .card h3 {
+    font-weight: 24px;
+    font-weight: 600;
+}
+
+section.cards .card p {
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+section.cards .card .card_image {
+    height: 100%;
+    height: 200px;
+}
+
+section.cards .card .card_image img {
+    width: 100%;
+    height: 100%;
+}
