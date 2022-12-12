@@ -1,0 +1,13 @@
+.search-box {
+    width: 50vw;
+    height: 50px;
+    box-sizing: borsder-box;
+    margin: 24px auto;
+}
+
+.search-box input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 4px 16px;
+}

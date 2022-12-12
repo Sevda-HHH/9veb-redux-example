@@ -5,6 +5,7 @@ import './style.css';
 
 export const Header = () => {
     const count = useSelector(state => state.counter.count);
+    const basketCount = useSelector(state => state.basket.products.length);
  
     return (
         <header>
@@ -14,6 +15,7 @@ export const Header = () => {
                 <li>Contact us </li>
             </ul>
 
+            <div className='basket'>BASKET: {basketCount}</div>
             <div className='count'>count: {count}</div>
         </header>
     )

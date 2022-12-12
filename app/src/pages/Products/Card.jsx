@@ -1,6 +1,6 @@
-export const Card = ({ item }) => {
+export const Card = ({ item, onClick }) => {
 
-    return (<div className="card" >
+    return (<div className="card" onClick={() => onClick(item)}>
         <div className="card_image">
             <img src={item.image} alt={item.title} />
         </div>

@@ -1,5 +1,9 @@
 import { combineReducers } from 'redux';
 import { counterReducer } from './counter';
-import { productsReducer } from './products';
+import { productsReducer, basketReducer } from './products';
 
-export const reducers = combineReducers({ counter: counterReducer, products: productsReducer });
+export const reducers = combineReducers({
+    basket: basketReducer,
+    counter: counterReducer,
+    products: productsReducer
+});

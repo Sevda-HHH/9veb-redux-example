@@ -6,6 +6,11 @@ const initialState = {
     status: "IDLE"
 };
 
+
+const initalStateBasket = {
+    products: []
+}
+
 export function productsReducer(state = initialState, action) {
     switch (action.type) {
         case ACTION_TYPES.GET_DATA.PENDING:
@@ -21,3 +26,21 @@ export function productsReducer(state = initialState, action) {
             return state
     }
 };
+
+
+export function basketReducer(state = initalStateBasket, action) {
+
+    const findProduct = state.products.find(item => item.id !== action.payload.id);
+    switch (action.type) {
+        case "ADD_TO_BASKET":
+
+            if (findProduct) {
+                return state
+            } else { 
+                return { ...state, products: [...state.products, action.payload] }
+            } 
+
+        default:
+            return state
+    }
+} 
